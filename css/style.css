@@ -232,6 +232,18 @@ color: #fff;
 
 /* Portfolio
 ---------------------------------*/
+
+.container h6{
+	margin:0 15px 0 0;
+
+}
+.portfolioFilter{
+	margin-top: 0;
+}
+
+.search{
+	margin-bottom: 10px;
+}
 .Portfolio-nav{
 	padding:0;
 	margin:0 0 45px 0;
