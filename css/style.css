@@ -106,9 +106,12 @@ p{
 	padding:0;
 	margin:35px 0 55px;
     color: #4999c5;
+    font-size: 27px;
 }
 .header .we-create i,.header .we-create h3{
+    margin: 10px 10px;
     color: white;
+    font-size: 30px;
 }
 .wp-pic{
 	margin-bottom:20px;
@@ -116,7 +119,7 @@ p{
 .we-create li{
 	display:inline-block;
 	font-family: 'Montserrat',sans-serif;
-	font-size:14px;
+	font-size:25px;
 	color: #898989;
 	text-transform: uppercase;
 	font-weight: 400;
