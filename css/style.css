@@ -33,7 +33,7 @@
 
 img{ max-width:100%;}
 
-a, a:hover, a:active{ outline:0px !important}
+a, a:hover, a:active{ outline:0 !important}
 
 @font-face {
   font-family: 'FontAwesome';
@@ -90,7 +90,7 @@ p{
 .header{
 	text-align:center;
 	background:url(../img/background.jpg) left top repeat;
-	padding:160px 0;
+	padding:100px 0;
 }
 
 .header h1{
@@ -102,20 +102,22 @@ p{
 	color: white;
 }
 
-.header .we-create{
-	padding:0;
-	margin:35px 0 55px;
+.header .we-create {
+	padding-bottom:7px;
+	margin:15px 0 40px;
+
     color: #4999c5;
     font-size: 27px;
 }
-.header .we-create i,.header .we-create h3{
+.we-create p{
+    padding-bottom: 7px;
+}
+.header .we-create h3{
     margin: 10px 10px;
     color: white;
     font-size: 30px;
 }
-.wp-pic{
-	margin-bottom:20px;
-}
+
 .we-create li{
 	display:inline-block;
 	font-family: 'Montserrat',sans-serif;
@@ -150,7 +152,7 @@ color: #fff;
 	border-radius:3px;
 	text-transform:uppercase;
 	line-height:25px;
-	margin-bottom:20px;
+	margin-bottom:25px;
 	transition:all 0.3s ease-in-out;
 	-moz-transition:all 0.3s ease-in-out;
 	-webkit-transition:all 0.3s ease-in-out;
@@ -211,6 +213,15 @@ color: #fff;
 
 /* Services
 ---------------------------------*/
+figure img{
+    position: absolute;
+    margin-left: 120px;
+    float: right;
+    width: 410px;
+    height: 450px;
+
+}
+
 
 .service-list{
 	padding:0 0 0 0;
@@ -230,7 +241,8 @@ color: #fff;
 	line-height:38px;
 }
 .service-list-col2{
-	overflow:hidden;	
+	overflow:hidden;
+    padding-right: 80px;
 }
 .main-section.alabaster{
 	background:#fafafa;
@@ -241,7 +253,7 @@ color: #fff;
 ---------------------------------*/
 
 .container h6{
-	margin:0 15px 0 0;
+	margin-bottom:30px;
 
 }
 .portfolioFilter{
@@ -358,7 +370,7 @@ img {
 /* Contact
 ---------------------------------*/
 .contact-info-box span{
-    font-size: 16px;
+    font-size: 20px;
     color: black;
 }
 .main-section.contact{
@@ -369,11 +381,11 @@ img {
 }
 .contact-info-box{
 	font-size:15px;
-	margin:0 0 14px 68px;
+	margin:0 0 14px 0;
 	padding-left:0;
 }
 .contact-info-box h3{
-	font-size: 15px;
+	font-size: 20px;
 	font-weight:400;
 	float:left;
 	width:102px;
@@ -383,7 +395,7 @@ img {
 .contact-info-box h3 i{
 	font-style:normal;
 	font-size:18px;
-	color:#222222;
+	color:#4999c5;
 	font-family: 'FontAwesome';
 	font-weight:normal;
 	margin-right:7px;
@@ -392,29 +404,6 @@ img {
 	line-height:28px;
 	display:block;
 	overflow:hidden;
-}
-.social-link{
-	padding:35px 0;
-	margin:0 0 0 68px;
-	display:block;
-	overflow:hidden;
-	list-style:none;
-}
-.social-link li{
-	float:left;
-	margin-right:8px;
-}
-.social-link li a{
-	display:block;
-	width:50px;
-	height:50px;
-	text-align:center;
-	line-height:50px;
-	font-size:25px;
-	color:#fff;
-	background:#222222;
-	border-radius:50%;
-	transition:all 0.3s ease-in-out;
 }
 
 /* Footer

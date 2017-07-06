@@ -40,18 +40,15 @@
         </ul>
         <div class="we-create animated fadeInUp delay-1s">
                     <h3><i class=" icon-map-marker"></i>Адрес:</h3>
-                    <p>Республика Беларусь,г.Минск<p><p>ул. Свислочская, д.39, к.22</p>
-
+            <p>Республика Беларусь,г.Минск</p>
+            <p>ул. Свислочская, д.39, к.22</p>
 
                     <h3><i class="fa-phone"></i>Телефон:</h3>
                     <p>1-800-BOO-YAHH</p>
 
-
                     <h3><i class="fa-pencil"></i>Электронная почта:</h3>
                     <p>hello@knightstudios.com</p>
         </div>
-
-
 
             <a class="link animated fadeInUp delay-1s servicelink" href="#service">Услуги</a>
             <a class="link animated fadeInUp delay-1s servicelink" href="#Portfolio">Каталог</a>
@@ -115,10 +112,16 @@
                     </div>
                 </div>
             </div>
-            <figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">
-            	<img src="img/macbook-pro.png" alt="">
+            <!--<figure class="col-lg-8 col-sm-6  text-right wow fadeInUp delay-02s">-->
+            <!--</figure>-->
+            <figure class="col-lg-8 col-sm-6 wow fadeInUp delay-02s ">
+                    <img  id="sh_back" src="img/2.jpg">
+                    <img  id="sh_front" src="img/1.jpg">
+                <script type="text/javascript">
+                    setTimeout('waiting()',3000);
+                </script>
             </figure>
-        
+
         </div>
 	</div>
 </section><!--main-section-end-->
@@ -358,7 +361,7 @@
                 	<span>1-800-BOO-YAHH</span>
                 </div>
                 <div class="contact-info-box email clearfix">
-                	<h3><i class="fa-pencil"></i>Электронная почта:</h3>
+                	<h3><i class="fa-pencil"></i>e-mail:</h3>
                     <span>hello@knightstudios.com</span>
                 </div>
             	<div class="contact-info-box hours clearfix">
@@ -470,5 +473,61 @@ $(window).load(function(){
 });
 
 </script>
+
+
+<script>
+var op=1;          // Прозрачность
+var img_front=1;   // Индекс отображаемой картинки
+var img_back=2;    // Индекс фоновой картинки
+var img_total=3;  // Общее количество картинок в ротации
+
+// Функция изменения прозрачности отображаемой картинки
+function fade() {
+// Непрозрачность уменьшается
+op-=0.1;
+if (op<0) {
+// Картинка непрозрачная
+op=1;
+
+// Берем следующие картинки
+img_front++;
+img_back++;
+// Если показали все, то переходим обратно на первую
+if (img_front>img_total) { img_front=1; }
+if (img_back>img_total) { img_back=1; }
+
+// Установить новые картинки на фон и отображение
+var tmp=document.getElementById('sh_front');
+// Прозрачность для браузеров
+tmp.style.opacity=op;
+// Прозрачность для IE
+tmp.style.filter='progid:DXImageTransform.Microsoft.Alpha(opacity=100)';
+tmp.src='img/'+img_front+'.jpg';
+var tmp=document.getElementById('sh_back');
+tmp.src='img/'+img_back+'.jpg';
+
+// Пауза между сменой картинок в 5 секунд
+setTimeout('waiting()',5000);
+}
+else {
+// Установить новое значение прозрачности для верхней картинки
+var tmp=document.getElementById('sh_front');
+// Прозрачность для браузеров
+tmp.style.opacity=op;
+// Прозрачность для IE
+tmp.style.filter='progid:DXImageTransform.Microsoft.Alpha(opacity='+
+Math.round(op*100)+')';
+
+// Следующая итерация цикла затухания
+setTimeout('fade()',50);
+}
+}
+
+// Функция запуска эффекта затухания
+function waiting() {
+fade();
+}
+</script>
+
 </body>
 </html>
