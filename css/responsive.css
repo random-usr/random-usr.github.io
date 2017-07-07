@@ -57,7 +57,7 @@
 	.header h1{ font-size:28px;}
 	.header{ padding:15px 15px;}
 	.main-section{ padding:70px 0 70px;}
-	.main-nav{ display:none; position:absolute; left:0; width:100%;top:74px; margin:0 auto; flote : none; background:#fff;}
+	.main-nav{ display:none; position:absolute; left:0; width:100%;top:74px; margin:0 auto; float : none; background:#fff;}
 	.main-nav li{ display:block;}
 	.main-nav li.small-logo{ display:none;}
 	.main-nav li a{ display:block; padding:7px 32px; border-bottom:none;}
@@ -80,7 +80,7 @@
 	.business-talking a{ padding:10px 25px; font-size:14px;}
 	.main-section.contact{ padding:70px 0 70px}
 	.client-part-haead{ font-size:20px; line-height:30px;}
-	.link{ font-size:14px; padding:10px 25px;}
+	.link{ font-size:14px; padding:10px 25px;margin-top:30px; }
 	.logo{ width:100px;}
 	.main-section.contact{ background-size:contain;}
 	.Portfolio-nav li a{ padding:5px 16px;}
@@ -99,9 +99,9 @@
 	/****Mobile Portrait 320 ****/
 	.header h1{margin-bottom: 0}
 	.header .we-create{margin: 5px 5px;padding-bottom: 0}
-	.contact-info-box{ margin-left:0px;}
-	.header{ padding:15px;}
-	.social-link{ margin-left:0px;}
+	.contact-info-box{ margin-left:0;}
+	.header{ padding-top:75px;padding-bottom: 150px;}
+	.social-link{ margin-left:0;}
 	.form{ margin:0}
 	.c-logo-part ul li{ display:block;}
 	.Portfolio-box{  max-width:300px !important; width:96.4% !important; margin:0 !important}
