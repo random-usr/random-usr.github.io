@@ -349,7 +349,7 @@ img {
 }
 
 .main-section.paddind{
-	padding-bottom:60px;
+	padding-bottom:100px;
 }
 /* Talk Business
 ---------------------------------*/
@@ -377,7 +377,7 @@ img {
     color: black;
 }
 .main-section.contact{
-	padding:80px 0 90px;
+	padding:50px 0 90px;
 }
 .main-section.contact{
 	background:url(../img/bg-map.png) left 190px no-repeat;
