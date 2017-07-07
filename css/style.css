@@ -92,7 +92,8 @@ p{
 .header{
 	text-align:center;
 	background:url(../img/background.jpg) left top repeat;
-	padding:100px 0;
+	padding-top:50px;
+	padding-bottom: 170px;
 }
 
 .header h1{
@@ -106,7 +107,7 @@ p{
 
 .header .we-create {
 	padding-bottom:7px;
-	margin:15px 0 40px;
+	margin:15px 0 10px;
 
     color: #4999c5;
     font-size: 27px;
