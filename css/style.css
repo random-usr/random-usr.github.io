@@ -33,6 +33,7 @@
 
 img{ max-width:100%;}
 
+
 a, a:hover, a:active{ outline:0 !important}
 
 @font-face {
@@ -50,7 +51,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
 	font-size:14px;
 	font-weight:normal;
-	color:#888888;
+	color: #c8c8c8;
 	margin:0;
 }
 h2{
@@ -89,11 +90,17 @@ p{
  ul{
 	padding-left: 0;
 }
+
 .header{
 	text-align:center;
-	background:url(../img/background.jpg) left top repeat;
+	/*background:url(../img/198.jpg) ;*/
 	padding-top:50px;
 	padding-bottom: 170px;
+	position: relative;
+
+}
+.header .container{
+	background:url(../img/background_h.png) left top repeat;
 }
 
 .header h1{
@@ -109,7 +116,7 @@ p{
 	padding-bottom:7px;
 	margin:15px 0 10px;
 
-    color: #4999c5;
+    color: #53b2e3;
     font-size: 27px;
 }
 .we-create p{
@@ -125,7 +132,7 @@ p{
 	display:inline-block;
 	font-family: 'Montserrat',sans-serif;
 	font-size:25px;
-	color: #898989;
+	color: #d9d9d9;
 	text-transform: uppercase;
 	font-weight: 400;
 	margin:0 5px 0 0;
@@ -190,6 +197,7 @@ color: #fff;
 .main-nav li{
 	display:inline;
 	margin:0 1px;
+	color: #4999c5;
 }
 .main-nav li a{
 	display:inline-block;
@@ -216,6 +224,9 @@ color: #fff;
 
 /* Services
 ---------------------------------*/
+/*figure #sh_front{*/
+	/*position: absolute;*/
+/*}*/
 figure img{
 	width: 410px;
     height: 450px;
@@ -354,9 +365,11 @@ img {
 /* Talk Business
 ---------------------------------*/
 .business-talking{
-	background:url(../img/section-bg2.jpg) top center no-repeat;
+	margin-bottom: 15px;
+	/*height: 100%;*/
+	background:url(../img/section-bg2.jpg) 100% ;
 	background-size:cover;
-	padding:60px 0 10px;
+	padding:40px 0 55px;
 	text-align:center;
 }
 .business-talking h2{

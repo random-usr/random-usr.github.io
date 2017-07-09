@@ -72,7 +72,7 @@
 	.main-section.team{ padding:60px 0 50px;}
 	.business-talking h2{ font-size:36px;}
 	.contact-info-box{ margin:0 0 12px 30px; font-size:12px;}
-	.contact-info-box h3{font-size: 15px; margin-right: 50px}
+	.contact-info-box h3{font-size: 15px; margin-right: 30px}
 	.contact-info-box span{ line-height:18px;font-size: 15px;}
 	.social-link{ margin-left:30px;}
 	.form{ margin:0 30px;}
@@ -97,6 +97,12 @@
 
 @media only screen and (max-width: 479px) {
 	/****Mobile Portrait 320 ****/
+	#header{ padding-top: 50px;}
+	figure img{
+
+		width: 280px;
+		height: 320px;
+	}
 	.header h1{margin-bottom: 0}
 	.header .we-create{margin: 5px 5px;padding-bottom: 0}
 	.contact-info-box{ margin-left:0;}
