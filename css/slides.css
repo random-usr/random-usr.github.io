@@ -2,6 +2,7 @@
 
 .body_slides
 {
+    background: url(../img/background_h.png);
     overflow: hidden;
     display: block;
     list-style:none;
