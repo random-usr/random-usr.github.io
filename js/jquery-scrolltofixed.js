@@ -150,9 +150,9 @@
                 if (!base.options.dontSetWidth){ cssOptions['width']=target.width(); };
 
                 target.css(cssOptions);
-                
+
                 target.addClass(base.options.baseClassName);
-                
+
                 if (base.options.className) {
                     target.addClass(base.options.className);
                 }
